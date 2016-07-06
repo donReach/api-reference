@@ -1,13 +1,11 @@
-# Share Count
-
-> Example Request
+# Follower Count
 
 ```shell
-curl http://alpha.donreach.com/shares?url=http://9gag.com/ \
+curl "http://alpha.donreach.com/followers?url=http://9gag.com/" \
   -H "Authorization: YOUR_API_KEY"
 ```
 
-> Example Response
+> The above command returns JSON structured like this:
 
 ```json
 {
@@ -23,7 +21,7 @@ curl http://alpha.donreach.com/shares?url=http://9gag.com/ \
 }
 ```
 
-Retrieves share counts for a given URL from selected social networking platforms.
+Retrieve one or more social profiles’ follower counts.
 
 ### Parameters
 
@@ -35,10 +33,6 @@ callback (optional) | processShares | The JavaScript callback to execute.
 providers (optional) | facebook, twitter, google, linkedin, pinterest | Which social sharing providers to query. See [Provider Codes](#provider-codes) for full list.
 
 ### Provider Codes
-
-<aside class="notice">
-The providers' object key in the response is spelt the same as it is in the providers parameter.
-</aside>
 
 Provider Name | Provider Code
 --------------|--------------

@@ -10,6 +10,7 @@ toc_footers:
 
 includes:
   - shares
+  - followers
 
 search: true
 ---
@@ -30,3 +31,10 @@ Professional | api.donreach.com
 Dedicated | YOURDOMAIN.donreach.com or your own domain.
 
 If you aren't sure which endpoint to use, sign in and visit **My Account**, where all your connection details are listed with your subscription.
+
+## Methods
+
+Method | Description
+------|---------|
+[/shares](#share-count) | Retrieve a URL's share count from multiple social networks.
+[/followers](#follower-count) | Retrieve one or more social profiles' follower counts.
